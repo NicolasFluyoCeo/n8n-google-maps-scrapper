@@ -1,28 +1,22 @@
 {
-  "name": "n8n-nodes-google-maps-scraper",
+  "name": "n8n-nodes-googlemaps-scraper",
   "version": "1.0.0",
-  "description": "n8n community node for Google Maps Scraper API",
-  "keywords": [
-    "n8n-community-node-package",
-    "google-maps",
-    "scraper",
-    "data-extraction"
-  ],
+  "description": "n8n community node for Google Maps Scraper API - Create, manage and download Google Maps scraping jobs",
   "license": "MIT",
-  "homepage": "https://github.com/your-username/n8n-nodes-google-maps-scraper",
+  "homepage": "https://github.com/NicolasFluyoCeo/n8n-google-maps-scrapper",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "Nicolas Fluyo",
+    "email": "nicolas@fluyo.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/n8n-nodes-google-maps-scraper.git"
+    "url": "git+https://github.com/NicolasFluyoCeo/n8n-google-maps-scrapper.git"
   },
   "engines": {
     "node": ">=18.10",
-    "pnpm": ">=8.6"
+    "pnpm": ">=8.1"
   },
-  "packageManager": "pnpm@8.6.2",
+  "packageManager": "pnpm@8.1.0",
   "main": "index.js",
   "scripts": {
     "build": "tsc && gulp build:icons",
@@ -30,7 +24,7 @@
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
     "lintfix": "eslint nodes credentials package.json --fix",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "prepublishOnly": "npm run build && npm run lint -s"
   },
   "files": [
     "dist"
@@ -45,15 +39,24 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^18.16.3",
     "@typescript-eslint/parser": "^5.45.0",
-    "eslint": "^8.29.0",
-    "eslint-plugin-n8n-nodes-base": "^1.11.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
     "gulp": "^4.0.2",
-    "n8n-workflow": "*",
+    "n8n-workflow": "^1.0.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
     "n8n-workflow": "*"
-  }
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "google-maps",
+    "scraper",
+    "maps",
+    "scraping",
+    "api"
+  ]
 }
